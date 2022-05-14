@@ -8,6 +8,7 @@ html {
   margin: 0;
   height: 100%;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   background-image: url("https://images.pexels.com/photos/768943/pexels-photo-768943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -46,6 +47,16 @@ nav {
 .nav-item a:hover {
   background-color: rgb(255, 255, 255);
   color: #000;
+}
+
+#main-title {
+  text-align: center;
+  font-size: 40px;
+}
+
+#subtitle {
+  text-align: center;
+  font-size: 20px;
 }
 
 section {
@@ -99,6 +110,7 @@ section {
 .jest-lite-report__status--pass {
   background: var(--color-pass);
 }
+
 .jest-lite-report__errors {
   display: none;
 }
