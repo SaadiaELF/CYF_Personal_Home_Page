@@ -68,6 +68,11 @@ section {
   font-size: 30px;
 }
 
+.section-subtitle {
+  text-align: center;
+  font-size: 20px;
+}
+
 .section-text {
   display: block;
   margin: auto;
@@ -75,6 +80,21 @@ section {
   font-size: 20px;
   width: 40%;
   text-align: center;
+}
+
+.section-card {
+  font-size: 20px;
+  display: grid;
+  margin: auto;
+  width: 40%;
+  padding: 20px;
+  background-color: rgba(63, 47, 70, 0.315);
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+button {
+  font-size: 20px;
 }
 
 #about img {
@@ -104,13 +124,4 @@ section {
   color: rgb(255, 255, 255);
   font-size: large;
   line-height: 10px;
-}
-
-/* don't edit this */
-.jest-lite-report__status--pass {
-  background: var(--color-pass);
-}
-
-.jest-lite-report__errors {
-  display: none;
 }
