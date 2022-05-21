@@ -1,20 +1,4 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - SEF: Personal Home Page</title>
-  <link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!-- =================
-  WRITE YOUR HTML HERE
-
-You only need to write the HTML that goes inside the <body> tag. To add things to the <head>, click the ⚙️ 
-   ===================
--->
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,8 +11,8 @@ You only need to write the HTML that goes inside the <body> tag. To add things t
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link href="style.css" rel="stylesheet" />
 </head>
 
@@ -37,6 +21,7 @@ You only need to write the HTML that goes inside the <body> tag. To add things t
     <nav aria-label="Main Site Links.">
       <ul id="nav-list">
         <li class="nav-item"><a href="#contact">Contact me</a></li>
+        <li class="nav-item"><a href="#project">My favorite project</a></li>
         <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
         <li class="nav-item"><a href="#about">About me</a></li>
       </ul>
@@ -47,8 +32,11 @@ You only need to write the HTML that goes inside the <body> tag. To add things t
     <h2 id="subtitle">Future Web Developer</h2>
     <section id="about">
       <h1 class="section-title"> About me </h1>
-      <img src="https://png.pngtree.com/png-vector/20210221/ourlarge/pngtree-illustration-of-female-programmer-at-work-png-image_2929274.jpg" alt="female programmer">
-      <p class="section-text"> I’m Saadia El Fekak. I'm originally from Morocco. I'm the mother of a beautiful baby girl. I have a
+      <img
+        src="https://png.pngtree.com/png-vector/20210221/ourlarge/pngtree-illustration-of-female-programmer-at-work-png-image_2929274.jpg"
+        alt="female programmer">
+      <p class="section-text"> I’m Saadia El Fekak. I'm originally from Morocco. I'm the mother of a beautiful baby
+        girl. I have a
         bachelor's degree in engineering in rural engineering. In my home country, I used to be a hydraulic
         engineer.
 
@@ -56,8 +44,19 @@ You only need to write the HTML that goes inside the <body> tag. To add things t
         development course. After I had my baby, I had a difficult time finding a job. Therefore, I decided to
         start over again and join the Code Your Future program.
       </p>
-      <!-- <p class="section-text"> Please enjoy my baby favorite song 😊 </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/9PhtxqKLvVc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </section>
+    <hr>
+    <section id="project">
+      <h1 class="section-title">My favorite project</h1>
+      <h2 class="section-subtitle">Don't go higher than 11!</h2>
+      <div class="section-card">
+        <p class="section-text">So far you have rolled:</p>
+        <ul id="list"></ul>
+        <button id="button_roll">Roll the dice</button>
+        <p>Total: <span id="total">0</span>. <span id="info">Keep playing!</span></p>
+        <button id="button_remove">Remove the last roll</button>
+        <button id="button_restart">Start again</button>
+        <div>
     </section>
     <hr>
     <section id="portfolio">
@@ -73,7 +72,8 @@ You only need to write the HTML that goes inside the <body> tag. To add things t
     <section id="contact">
       <h1 class="section-title">Contact me</h1>
       <p class="section-text"> For further information, please contact me via linkedin<br><br>
-        <a href="https://www.linkedin.com/in/saadia-el-fekak-5b138780 " target="_blank"><i class="fab fa-linkedin fa-5x">
+        <a href="https://www.linkedin.com/in/saadia-el-fekak-5b138780 " target="_blank"><i
+            class="fab fa-linkedin fa-5x">
           </i>
         </a>
       </p>
@@ -83,22 +83,9 @@ You only need to write the HTML that goes inside the <body> tag. To add things t
     <p> SEF © Copyright </p>
   </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
-<!--- All the tests are red! You have to make them green. 
-
-Q How do you make the tests pass?
-A Meet the requirements!
-
-Make the first test pass by adding a <header> </header>-->
-
-<!-- Your test console.
-Don't delete!-->
-<!-- <aside id="tests" aria-label="Test Readout." aria-live="polite" style="overflow:auto">
-</aside> -->
-<!-- partial -->
-  <script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js'></script>
-<script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js'></script><script  src="./script.js"></script>
-
 </body>
+
 </html>
